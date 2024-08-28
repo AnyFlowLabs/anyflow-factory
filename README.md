@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+# AnyFlow Factory Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This Hardhat project contains the smart contracts for the AnyFlow Factory. The factory is responsible for implementing advanced features for creating new contracts on the AnyFlow platform.
 
-Try running some of the following tasks:
+## How it works
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+The main contract is the `AnyFlowFactory.sol` contract. This contract is responsible for creating new contracts using the `CREATE2` opcode. The `CREATE2` opcode allows for the creation of a contract at a specific address based on the contract's bytecode and a salt value. The salt value is used to create a unique address for each contract created by the factory. 
+
+## Deployment
+
+To deploy this project, log into AnyFlow and follow the instructions.
