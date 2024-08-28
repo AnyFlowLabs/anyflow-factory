@@ -1,7 +1,31 @@
 {
-  "name": "hardhat-project",
+  "name": "anyflow-factory",
+  "author": {
+    "name": "yudi@anyflow.pro",
+    "email": "yudi@anyflow.pro"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": "^20.15.1"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat ignition deploy ./ignition/modules/AnyFlowFactory.ts",
+    "test": "hardhat test"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
-    "hardhat": "^2.22.9"
+    "@types/chai": "4",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^22.5.1",
+    "chai": "4",
+    "hardhat": "^2.22.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
+    "@openzeppelin/contracts": "^5.0.2",
+    "viem": "^2.20.1"
   }
 }
