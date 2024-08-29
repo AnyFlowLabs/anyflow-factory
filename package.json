@@ -21,11 +21,12 @@
     "chai": "4",
     "hardhat": "^2.22.9",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "~5.0.0"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
     "viem": "^2.20.1"
   }
 }
